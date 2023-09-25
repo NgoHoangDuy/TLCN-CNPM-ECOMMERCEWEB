@@ -11,9 +11,11 @@ app.use(cookieParser());
 //Import all routes
 const products = require("./routes/product");
 const users = require("./routes/user");
+const orders = require("./routes/order");
 
 app.use("/api/v1", products);
 app.use("/api/v1", users);
+app.use("/api/v1", orders);
 app.use(errorMiddleware);
 
 module.exports = app;
