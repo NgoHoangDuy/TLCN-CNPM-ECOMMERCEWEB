@@ -7,7 +7,9 @@ const cloudinary = require("cloudinary");
 const fileUpload = require("express-fileupload");
 
 app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true, useTempFiles: true }));
 app.use(cookieParser());
+app.use(fileUpload());
 //Import all routes
 const products = require("./routes/product");
 const users = require("./routes/user");
