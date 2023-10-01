@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-//import OrderSuccess from "../../components/cart/OrderSuccess";
+import OrderSuccess from "../../components/cart/OrderSuccess";
 //
 const RedirectRoutes = () => {
   return (

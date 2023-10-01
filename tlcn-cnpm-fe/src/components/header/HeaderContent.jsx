@@ -229,7 +229,7 @@ const HeaderContent = () => {
           {/* Logo */}
           <div className="top__logo">
             <Link to="/">
-              <LazyLoadImage style={{ width: "220px" }} src={header} />
+              <LazyLoadImage style={{ width: "200px" }} src={header} />
             </Link>
           </div>
           {/* Location */}
