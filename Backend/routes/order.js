@@ -1,28 +1,32 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
 
-const { authorizeRoles, isAuthenticatedUser } = require("../middlewares/auth");
-const {
-  newOrder,
-  getSingleOrder,
-  myOrders,
+import { authorizeRoles, isAuthenticatedUser } from "../middlewares/auth.js";
+import {
   allOrders,
-  updateOrder,
   deleteOrder,
-} = require("../controllers/orderController");
+  getOrderDetails,
+  getSales,
+  myOrders,
+  newOrder,
+  updateOrder,
+} from "../controllers/orderControllers.js";
 
-router.route("/order/new").post(isAuthenticatedUser, newOrder);
-router.route("/order/:id").get(isAuthenticatedUser, getSingleOrder);
-router.route("/orders/me").get(isAuthenticatedUser, myOrders);
+router.route("/orders/new").post(isAuthenticatedUser, newOrder);
+router.route("/orders/:id").get(isAuthenticatedUser, getOrderDetails);
+router.route("/me/orders").get(isAuthenticatedUser, myOrders);
+
+router
+  .route("/admin/get_sales")
+  .get(isAuthenticatedUser, authorizeRoles("admin"), getSales);
+
 router
   .route("/admin/orders")
   .get(isAuthenticatedUser, authorizeRoles("admin"), allOrders);
 
 router
-  .route("/admin/order/:id")
-  .put(isAuthenticatedUser, authorizeRoles("admin"), updateOrder);
-
-router
-  .route("/admin/order/:id")
+  .route("/admin/orders/:id")
+  .put(isAuthenticatedUser, authorizeRoles("admin"), updateOrder)
   .delete(isAuthenticatedUser, authorizeRoles("admin"), deleteOrder);
-module.exports = router;
+
+export default router;

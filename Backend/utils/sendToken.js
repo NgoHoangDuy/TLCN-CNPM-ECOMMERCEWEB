@@ -1,6 +1,6 @@
-// tạo và gửi token lưu ở cookies
-const sendToken = (user, statusCode, res) => {
-  // Create Jwt token
+// Create token and save in the cookie
+export default (user, statusCode, res) => {
+  // Create JWT Token
   const token = user.getJwtToken();
 
   // Options for cookie
@@ -12,10 +12,6 @@ const sendToken = (user, statusCode, res) => {
   };
 
   res.status(statusCode).cookie("token", token, options).json({
-    success: true,
     token,
-    user,
   });
 };
-
-module.exports = sendToken;
