@@ -35,7 +35,7 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Encrypting password before saving the user
+// Encryp password before saving the usert
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) {
     next();
@@ -44,7 +44,7 @@ userSchema.pre("save", async function (next) {
   this.password = await bcrypt.hash(this.password, 10);
 });
 
-// Return JWT Token
+// Refresh JWT Token
 userSchema.methods.getJwtToken = function () {
   return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRES_TIME,

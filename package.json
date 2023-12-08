@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "backend for TLCN",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "start": "node Backend/app.js",
     "dev": "SET NODE_ENV=DEVELOPMENT& nodemon Backend/app.js",
