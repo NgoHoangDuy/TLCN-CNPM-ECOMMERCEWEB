@@ -7,6 +7,9 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
+:root{
+  --primary-color: #2b0443
+}
 
 /* Scroll Bar */
 
@@ -27,7 +30,7 @@ body {
 }
 
 nav {
-  background-color: #232f3e;
+  background-color: #2b0443;
   padding: 1rem 1rem;
 }
 
@@ -42,7 +45,7 @@ nav {
 }
 
 #search_btn {
-  background-color: #febd69;
+  background-color:  #8083ec;
 }
 
 .input-group {
@@ -58,7 +61,7 @@ nav {
 #login_btn,
 #view_btn,
 #new_review_btn {
-  background-color: #fa9c23;
+  background-color:  var(--primary-color);
   padding: 0.4rem 1.8rem;
   color: white;
 }
@@ -69,7 +72,7 @@ nav {
 }
 
 #cart_count {
-  background-color: #febd69;
+  background-color:  #8083ec;
   padding: 0.2rem 0.5rem;
   border-radius: 0.2rem;
   color: black;
@@ -92,7 +95,7 @@ nav {
 }
 
 .card-title a:hover {
-  color: #fa9c23;
+  color:  var(--primary-color);
   text-decoration: none;
 }
 
@@ -147,7 +150,7 @@ footer {
 #cart_btn,
 #review_btn {
   border-radius: 2rem;
-  background-color: #fa9c23;
+  background-color:  var(--primary-color);
   border: none;
   padding: 0.5rem 2rem;
 }
@@ -192,8 +195,8 @@ footer {
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid #fa9c23;
-  border-color: #fa9c23 transparent;
+  border: 6px solid  var(--primary-color);
+  border-color:  var(--primary-color) transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 @keyframes lds-dual-ring {
@@ -225,22 +228,22 @@ footer {
 }
 
 #card_item_price {
-  color: #febd69;
+  color:  #8083ec;
   font-weight: bold;
   font-size: 1.4rem;
 }
 
 #checkout_btn,
 .review-btn {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color:  var(--primary-color);
+  border-color:  var(--primary-color);
   margin-top: 2rem;
   border-radius: 5rem;
 }
 
 #view_order_details {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color:  var(--primary-color);
+  border-color:  var(--primary-color);
 }
 
 #order_summary {
@@ -293,14 +296,14 @@ footer {
 
 .wrapper form .btn,
 .fetch-btn {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color:  var(--primary-color);
+  border-color:  var(--primary-color);
   color: white;
   margin-top: 1rem;
 }
 
 .fetch-btn:hover {
-  background-color: #fa9c23;
+  background-color:  var(--primary-color);
   color: white;
 }
 
@@ -378,7 +381,7 @@ footer {
 }
 
 .active-step {
-  background: #fa9c23;
+  background:  var(--primary-color);
   color: #fff;
 }
 
@@ -386,7 +389,7 @@ footer {
   float: left;
   width: 0;
   border-top: 20px solid transparent;
-  border-left: 15px solid #fa9c23;
+  border-left: 15px solid  var(--primary-color);
   border-bottom: 20px solid transparent;
   margin-left: -1px;
 }
@@ -394,9 +397,9 @@ footer {
 .triangle2-active {
   width: 0;
   float: left;
-  border-top: 20px solid #fa9c23;
+  border-top: 20px solid  var(--primary-color);
   border-left: 15px solid #fff;
-  border-bottom: 20px solid #fa9c23;
+  border-bottom: 20px solid  var(--primary-color);
   margin-right: -1px;
 }
 
@@ -436,8 +439,8 @@ footer {
 }
 
 #edit_profile {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color:  var(--primary-color);
+  border-color:  var(--primary-color);
 }
 
 /* Confirm Order */
@@ -449,8 +452,8 @@ footer {
 
 .update-btn,
 #create_btn {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color:  var(--primary-color);
+  border-color:  var(--primary-color);
   color: white;
 }
 
@@ -460,16 +463,16 @@ footer {
 
 /* Pagination */
 .page-item.active .page-link {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color:  var(--primary-color);
+  border-color:  var(--primary-color);
 }
 
 .page-link {
-  color: #fa9c23;
+  color:  var(--primary-color);
 }
 
 .page-link:hover {
-  color: #fa9c23;
+  color:  var(--primary-color);
 }
 
 /* Products List Admin */
@@ -516,7 +519,7 @@ footer {
 }
 
 .orange {
-  color: #fa9c23;
+  color:  var(--primary-color);
 }
 
 .yellow {
@@ -538,8 +541,8 @@ footer {
 }
 
 #filter_form button {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color:  var(--primary-color);
+  border-color:  var(--primary-color);
 }
 
 .filter {
@@ -561,5 +564,5 @@ footer {
   background-color: #f3f4f6;
   border-color: #f3f4f6;
   border-radius: 0.3rem;
-  color: #fa9c23;
+  color:  var(--primary-color);
 }
