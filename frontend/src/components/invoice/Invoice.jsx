@@ -49,19 +49,19 @@ const Invoice = () => {
         <div id="order_invoice" className="p-3 border border-secondary">
           <header className="clearfix">
             <div id="logo">
-              <img src="/images/invoice-logo.png" alt="Company Logo" />
+              <img src="/images/icon.png" alt="Company Logo" />
             </div>
             <h1>INVOICE # {order?._id}</h1>
             <div id="company" className="clearfix">
-              <div>ShopIT</div>
+              <div>EcStore</div>
               <div>
-                455 Foggy Heights,
+                Số 1 Võ Văn Ngân, Thủ Đức
                 <br />
-                AZ 85004, US
+                Thành Phố Hồ Chí Minh, Việt Nam
               </div>
-              <div>(602) 519-0450</div>
+              <div>0382771941</div>
               <div>
-                <a href="mailto:info@shopit.com">info@shopit.com</a>
+                <a href="mailto:dongocduyhung7@gmail.com">dongocduyhung7@gmail.com</a>
               </div>
             </div>
             <div id="project">

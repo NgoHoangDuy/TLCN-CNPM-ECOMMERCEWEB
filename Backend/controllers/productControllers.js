@@ -83,7 +83,7 @@ export const uploadProductImages = catchAsyncErrors(async (req, res) => {
     return next(new ErrorHandler("Product not found", 404));
   }
 
-  const uploader = async (image) => upload_file(image, "shopit/products");
+  const uploader = async (image) => upload_file(image, "TLCN/products");
 
   const urls = await Promise.all((req?.body?.images).map(uploader));
 

@@ -59,7 +59,7 @@ export const logout = catchAsyncErrors(async (req, res, next) => {
 
 // Upload user avatar   =>  /api/v1/me/upload_avatar
 export const uploadAvatar = catchAsyncErrors(async (req, res, next) => {
-  const avatarResponse = await upload_file(req.body.avatar, "shopit/avatars");
+  const avatarResponse = await upload_file(req.body.avatar, "TLCN/avatars");
 
   // Remove previous avatar
   if (req?.user?.avatar?.url) {
@@ -97,7 +97,7 @@ export const forgotPassword = catchAsyncErrors(async (req, res, next) => {
   try {
     await sendEmail({
       email: user.email,
-      subject: "ShopIT Password Recovery",
+      subject: "Reset Password",
       message,
     });
 

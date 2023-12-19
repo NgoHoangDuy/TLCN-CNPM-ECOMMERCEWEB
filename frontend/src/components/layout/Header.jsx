@@ -24,7 +24,7 @@ const Header = () => {
       <div className="col-12 col-md-3 ps-5">
         <div className="navbar-brand">
           <a href="/">
-            <img src="/images/shopit_logo.png" alt="ShopIT Logo" />
+            <img src="/images/store.png" alt="EcStore Logo" className="w-50 h-100"/>
           </a>
         </div>
       </div>
