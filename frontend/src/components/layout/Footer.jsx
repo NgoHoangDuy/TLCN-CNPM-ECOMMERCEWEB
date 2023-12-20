@@ -67,13 +67,13 @@ const Footer = () => {
                         <h5>Thông tin liên lạc</h5>
                             <ul className='text-white'>
                                     <li className="nav-item">
-                                        <a className="" href="/">Email:dongocduyhung7@gmail.com</a>
+                                        <span className="" href="/">Email:dongocduyhung7@gmail.com</span>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="" href="/">SĐT: 0382771941</a>
+                                        <span className="" href="/">SĐT: 0382771941</span>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="" href="/">Địa chỉ: Số 1 Võ Văn Ngân, Thủ Đức</a>
+                                        <span className="" href="/">Địa chỉ: Số 1 Võ Văn Ngân, Thủ Đức</span>
                                     </li>
                                 </ul>
                         </div>
