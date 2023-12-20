@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 import CustomPagination from "./layout/CustomPagination";
 import { useSearchParams } from "react-router-dom";
 import Filters from "./layout/Filters";
-
+import Slide from "./layout/Slide";
 const Home = () => {
   let [searchParams] = useSearchParams();
   const page = searchParams.get("page") || 1;
@@ -38,7 +38,7 @@ const Home = () => {
 
   return (
     <>
-      <MetaData title={"Buy Best Products Online"} />
+      <MetaData title={"Mua hàng trực tuyến"} />
       <div className="row">
         {keyword && (
           <div className="col-6 col-md-3 mt-5">
@@ -49,7 +49,7 @@ const Home = () => {
           <h1 id="products_heading" className="text-secondary">
             {keyword
               ? `${data?.products?.length} Products found with keyword: ${keyword}`
-              : "Latest Products"}
+              : <Slide/>}
           </h1>
 
           <section id="products" className="mt-5">

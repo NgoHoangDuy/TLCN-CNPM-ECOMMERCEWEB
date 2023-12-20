@@ -4,7 +4,7 @@ import { useGetMeQuery } from "../../redux/api/userApi";
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { useLazyLogoutQuery } from "../../redux/api/authApi";
-
+import { GrCart } from "react-icons/gr";
 const Header = () => {
   const navigate = useNavigate();
 
@@ -35,7 +35,7 @@ const Header = () => {
         <a href="/cart" style={{ textDecoration: "none" }}>
           <span id="cart" className="ms-3">
             {" "}
-            Cart{" "}
+            <GrCart size={25}/>{" "}
           </span>
           <span className="ms-1" id="cart_count">
             {cartItems?.length}
