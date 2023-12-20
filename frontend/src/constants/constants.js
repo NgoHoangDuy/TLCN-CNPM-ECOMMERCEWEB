@@ -1,11 +1,10 @@
 export const PRODUCT_CATEGORIES = [
-  "Electronics",  
+  "Electronics",
   "Laptops",
   "Phones",
   "Tablets",
-  "Watchs",
   "Smartwatchs",
   "Accessories",
   "Headphones",
-  "Cameras",  
+  "Cameras",
 ];
