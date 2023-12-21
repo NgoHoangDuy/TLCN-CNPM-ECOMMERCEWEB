@@ -2,8 +2,8 @@
 - Đề tài: **Xây dựng website bán hàng điện tử sử dụng Mern stack**
 - GVHD: NGUYỄN HỮU TRUNG
 -SVTH:
-Ngô Hoàng Duy 			19145166
-Đỗ Ngọc Duy Hưng			20145267
+  -Ngô Hoàng Duy 			19145166
+  -Đỗ Ngọc Duy Hưng			20145267
 
 ## Demo
 [This application is deployed on cyclic.sh Please check it out : 😀 smile](https://rose-uninterested-quail.cyclic.app/) 
