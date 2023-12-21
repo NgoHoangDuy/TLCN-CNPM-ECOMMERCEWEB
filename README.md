@@ -1,9 +1,9 @@
 # Tiểu luận chuyên ngành Công nghệ phần mềm
 - Đề tài: **Xây dựng website bán hàng điện tử sử dụng Mern stack**
 - GVHD: NGUYỄN HỮU TRUNG
--SVTH:
-  -Ngô Hoàng Duy 			19145166
-  -Đỗ Ngọc Duy Hưng			20145267
+- SVTH:
+  - Ngô Hoàng Duy 			19145166
+  - Đỗ Ngọc Duy Hưng			20145267
 
 ## Demo
 [This application is deployed on cyclic.sh Please check it out : 😀 smile](https://rose-uninterested-quail.cyclic.app/) 
@@ -32,7 +32,7 @@ Website load may take some time, so please wait.
 
 **Deployed On:**
 
-![Cylic.sh](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cyclic.sh%2Fposts%2Fwhy-i-started-cyclic&psig=AOvVaw3rQwp4TnkgEAiChOt6jrTs&ust=1703255481379000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLD3oqPfoIMDFQAAAAAdAAAAABAD)
+[Cylic.sh](https://www.cyclic.sh/)
 
 **Image Management:** [Cloudinary](https://cloudinary.com/)
 
