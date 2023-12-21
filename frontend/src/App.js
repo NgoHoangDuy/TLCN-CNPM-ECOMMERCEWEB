@@ -19,7 +19,6 @@ function App() {
       <div className="App">
         <Toaster position="top-center" />
         <Header />
-
         <div className="container">
           <Routes>
             {userRoutes}
@@ -27,7 +26,6 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
-
         <Footer />
       </div>
     </Router>

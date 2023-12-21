@@ -7,7 +7,7 @@ import { delete_file, upload_file } from "../utils/cloudinary.js";
 
 // Create new Product   =>  /api/v1/products
 export const getProducts = catchAsyncErrors(async (req, res, next) => {
-  const resPerPage = 4;
+  const resPerPage = 8;
   const apiFilters = new APIFilters(Product, req.query).search().filters();
 
   let products = await apiFilters.query;
@@ -83,7 +83,7 @@ export const uploadProductImages = catchAsyncErrors(async (req, res) => {
     return next(new ErrorHandler("Product not found", 404));
   }
 
-  const uploader = async (image) => upload_file(image, "shopit/products");
+  const uploader = async (image) => upload_file(image, "TLCN/products");
 
   const urls = await Promise.all((req?.body?.images).map(uploader));
 

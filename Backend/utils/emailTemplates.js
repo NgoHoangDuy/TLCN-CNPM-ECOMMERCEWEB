@@ -448,10 +448,10 @@ export const getResetPasswordTemplate = (username, resetUrl) => `
             <tr>
               <td class="email-masthead">
                 <a
-                  href="https://shopit.com"
+                  href="https://fine-gray-badger-hem.cyclic.app"
                   class="f-fallback email-masthead_name"
                 >
-                  ShopIT
+                  EcStore
                 </a>
               </td>
             </tr>
@@ -476,11 +476,9 @@ export const getResetPasswordTemplate = (username, resetUrl) => `
                       <div class="f-fallback">
                         <h1>Hi ${username},</h1>
                         <p>
-                          You recently requested to reset your password for your
-                          ShopIT account. Use the button below to reset it.
+                         Bạn đã thực hiện reset mail
                           <strong
-                            >This password reset is only valid for the next 30
-                            minutes.</strong
+                            >Link password Reset có hiệu lực trong 30 phút.</strong
                           >
                         </p>
 
@@ -516,20 +514,21 @@ export const getResetPasswordTemplate = (username, resetUrl) => `
                           </tr>
                         </table>
                         <p>
-                          If you did not request a password reset, please ignore
-                          this email or
+                        Nếu bạn không yêu cầu reset password thì tham khảo đường dẫn bên dưới
+                        Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua
+                        email này hoặc
                           <a href="{{support_url}}">contact support</a> if you
                           have questions.
                         </p>
-                        <p>Thanks, <br />The ShopIT team</p>
+                        <p>Thanks, <br />EcStore</p>
 
                         <table class="body-sub" role="presentation">
                           <tr>
                             <td>
                               <p class="f-fallback sub">
-                                If you’re having trouble with the button above,
-                                copy and paste the URL below into your web
-                                browser.
+                              Nếu bạn gặp sự cố với nút ở trên, 
+                              hãy sao chép và dán URL bên dưới vào 
+                              trình duyệt web của bạn.
                               </p>
                               <p class="f-fallback sub">
                                 <a href="${resetUrl}">${resetUrl}</a>
@@ -556,8 +555,8 @@ export const getResetPasswordTemplate = (username, resetUrl) => `
                   <tr>
                     <td class="content-cell" align="center">
                       <p class="f-fallback sub align-center">
-                        ShopIT
-                        <br />1234 Street Rd. <br />Suite 1234
+                        EcStore
+                        <br />Số 1 Võ Văn Ngân <br />
                       </p>
                     </td>
                   </tr>
