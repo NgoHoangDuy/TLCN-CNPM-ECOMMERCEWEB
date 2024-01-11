@@ -1,6 +1,7 @@
 # Tiểu luận chuyên ngành Công nghệ phần mềm
 - Đề tài: **Xây dựng website bán hàng điện tử sử dụng Mern stack**
-- GVHD: NGUYỄN HỮU TRUNG
+- GVHD: ThS. NGUYỄN HỮU TRUNG
+- GVPB: ThS. TRƯƠNG THỊ NGỌC PHƯỢNG
 - SVTH:
   - Ngô Hoàng Duy 			19145166
   - Đỗ Ngọc Duy Hưng			20145267
@@ -43,19 +44,21 @@ Website load may take some time, so please wait.
 ## 🚀 Features
 - Login/Signup User Account
 - Update Profile/Password User Account
-- Reset Password Mail using Mailtrap
+- Forgot Password Mail
 - User can view Single Product
 - Cart Add/Remove Items | Update Quantities
 - Products Pagination (Default 8 Products Per Page)
 - Product Search
-- Product Filters Based on Category, Ratings
+- Product Filters Based on Category, Ratings, Price
 - Shipping Info in Session Storage
 - Before payment user passes 3 steps Shipping Address | Confirm Order | Card Details
-- My Orders (With All Filters)
+- History my Orders 
 - Order Details of All Ordered Item
-- Review Products User Account
+- Review/rating Products User Account
 - Admin: Dashboard access to only admin roles
-- Admin: Add/Update Products
+- Admin: Add/Update/Delete Products
+- Admin: Update/Delete User Account
+- Admin: View/Delete Review
 
 
 
